@@ -1,4 +1,4 @@
-# demo_economic_website
+# Ecommerce_website
 
 ## Build Setup
 
