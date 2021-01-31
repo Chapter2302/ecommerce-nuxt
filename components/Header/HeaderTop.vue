@@ -5,7 +5,7 @@
                 <div class="top-header-left flex-1 hidden lg:block xl:block"></div>
                 <div class="top-header-mid flex justify-start xl:justify-center lg:justify-center flex-1">
                     <!-- hamburger -->
-                    <div id="hamburger" class="px-3 my-0 mr-1 h-full flex cursor-pointer lg:hidden xl:hidden items-center hover:bg-black hover:text-white border-2 border-black content-box rounded"  @click="setIsOpenMobileNav">
+                    <div id="hamburger" class="px-3 my-0 mr-1 h-full flex cursor-pointer lg:hidden xl:hidden items-center hover:bg-black hover:text-white border-2 border-black rounded"  @click="setIsOpenMobileNav">
                         <i class="fas fa-bars" :class="{'fa-times': isOpenMobileNav, 'fa-barsblock': !isOpenMobileNav}"></i>
                     </div>
                     <div>
@@ -16,27 +16,27 @@
                     </div>  
                 </div>
                 <div class="top-header-right h-full flex justify-end flex-1">
-                    <a href="#" class="pl-4 flex items-end no-underline text-base md:text-xl lg:text-xl xl:text-xl font-bold text-gray-400 hover:text-yellow-400">
+                    <a href="#" class="ml-4 flex items-end no-underline text-base md:text-xl lg:text-xl xl:text-xl font-bold text-gray-400 hover:text-yellow-400">
                         LOGIN
                     </a>
-                    <a href="#" class="pl-4 flex items-end no-underline text-base md:text-xl lg:text-xl xl:text-xl font-bold text-gray-400 hover:text-yellow-400">
+                    <a href="#" class="ml-4 flex items-end no-underline text-base md:text-xl lg:text-xl xl:text-xl font-bold text-gray-400 hover:text-yellow-400">
                         BAG
                     </a>
                 </div>
             </div>
         </div>
         <!--Mobile Menu-->
-        <nav id="mobileNav" style="z-index: -1" v-if="isOpenMobileNav" class="block lg:hidden xl:hidden text-bold w-full bg-white border-b border-t-2 border-yellow-500">        
-            <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">NEW IN</a>
+        <div id="mobileNav" style="transition: height 1s; overflow: hidden" :style="{'height': isOpenMobileNav ? '100%' : '0px'}" class="fixed text-bold w-full bg-white">       
+            <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-t-2 border-b border-yellow-500">NEW IN</a>
             <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">PRODUCT</a>
             <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">STYLE STORY</a>
             <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">SALE</a>
-            <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2">
+            <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">
                 <span class="flex items-stretch ">
                     <i class="fas fa-search self-center pr-2"></i>SEARCH
                 </span>
             </a>
-        </nav>
+        </div>
     </div>
 </template>
 

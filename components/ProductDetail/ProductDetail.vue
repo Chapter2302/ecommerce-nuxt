@@ -25,17 +25,17 @@
                 <div class="product-color-detail py-2.5"> 
                     <div class="font-semibold">MÀU SẮC: {{productColor.toUpperCase()}}</div>
                     <div class="flex">
-                        <div v-on:click="productColor='Xanh'" class="rounded-full h-5 w-5 bg-green-300 cursor-pointer mr-2"></div>
-                        <div v-on:click="productColor='Xám'" class="rounded-full h-5 w-5 bg-gray-300 cursor-pointer"></div>
+                        <div v-on:click="productColor='Xanh'" :class="{'border-4': productColor == 'Xanh', 'border-yellow-400': productColor == 'Xanh'}" class="rounded-full h-5 w-5 bg-green-300 cursor-pointer mr-2 outline-none"></div>
+                        <div v-on:click="productColor='Xám'" :class="{'border-4': productColor == 'Xám', 'border-yellow-400': productColor == 'Xám'}" class="rounded-full h-5 w-5 bg-gray-300 cursor-pointer outline-none"></div>
                     </div>
                 </div>
                 
                 <div class="product-size-detail py-2.5">
                     <div class="font-semibold">KÍCH THƯỚC</div>
                     <div class="product-size-items flex">
-                        <div v-on:click="productSize = 'S'" :class="{'text-white': productSize == 'S', 'bg-black': productSize == 'S'}" class="border border-black w-7 mr-1 text-center cursor-pointer">S</div>
-                        <div v-on:click="productSize = 'M'" :class="{'text-white': productSize == 'M', 'bg-black': productSize == 'M'}" class="border border-black w-7 mr-1 text-center cursor-pointer">M</div>
-                        <div v-on:click="productSize = 'L'" :class="{'text-white': productSize == 'L', 'bg-black': productSize == 'L'}" class="border border-black w-7 mr-1 text-center cursor-pointer">L</div>
+                        <div style="transition: background-color 0.5s" v-on:click="productSize = 'S'" :class="{'text-white': productSize == 'S', 'bg-black': productSize == 'S'}" class="border border-black w-7 mr-1 text-center cursor-pointer">S</div>
+                        <div style="transition: background-color 0.5s" v-on:click="productSize = 'M'" :class="{'text-white': productSize == 'M', 'bg-black': productSize == 'M'}" class="border border-black w-7 mr-1 text-center cursor-pointer">M</div>
+                        <div style="transition: background-color 0.5s" v-on:click="productSize = 'L'" :class="{'text-white': productSize == 'L', 'bg-black': productSize == 'L'}" class="border border-black w-7 mr-1 text-center cursor-pointer">L</div>
                     </div>
                 </div>
                 
@@ -69,8 +69,9 @@
 
 <script>
 // components
-
 export default {
+    components: {
+    },
     data() {
         return {
             productImgs: ["photo2", "photo3", "photo2", "photo3"],
