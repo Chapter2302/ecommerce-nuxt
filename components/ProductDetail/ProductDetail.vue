@@ -7,7 +7,7 @@
                         v-on:click="selectedImg = index"
                         :class="{ 'border-yellow-400': index === selectedImg, 'hover:border-yellow-400': index === selectedImg, 'hover:border-yellow-200': index !== selectedImg }" 
                         v-for="(imgURL, index) in productImgs" 
-                        v-bind:index="index" :key="'product'+imgURL" 
+                        v-bind:index="index" :key="'product' + index" 
                         :src="require(`@/assets/imgs/product/${imgURL}.jpg`)" 
                         class="object-fill w-full box-content border-4 border-transparent cursor-pointer xs:justify-self-start" style="max-height: 143px" alt="" 
                     />
@@ -43,18 +43,18 @@
                     <div>SỐ LƯỢNG: </div>
                     <div class="custom-number-input">
                         <div class="flex flex-row mt-1" style="z-index: -1">
-                            <div v-on:click="productQuantity > 0 ? productQuantity -= 1 : productQuantity" class="flex justify-center flex-wrap content-center text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-8 w-6 cursor-pointer outline-none border border-r-0 border-black">
+                            <button v-on:click="productQuantity > 0 ? productQuantity -= 1 : productQuantity" class="flex justify-center flex-wrap content-center text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-8 w-6 cursor-pointer outline-none border border-r-0 border-black">
                             -
-                            </div>
+                            </button>
                             <input 
                                 type="number" 
                                 class="bg-transparent outline-none focus:outline-none text-center w-6 h-8 font-semibold text-md hover:text-black focus:text-black md:text-basecursor-default flex items-center text-gray-700 outline-none border-b border-t border-black" 
                                 name="custom-input-number" 
                                 v-model="productQuantity"
                             />
-                            <div v-on:click="productQuantity += 1" class="flex justify-center flex-wrap content-center text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-8 w-6 cursor-pointer outline-none border border-l-0 border-black">
+                            <button v-on:click="productQuantity += 1" class="flex justify-center flex-wrap content-center text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-8 w-6 cursor-pointer outline-none border border-l-0 border-black">
                             +
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
             <div class="footer-1-left-side flex-1 my-5">
                     <div class="footer-logo w-full flex justify-center lg:justify-start xl:justify-start items-center">
                         <!--<img />-->
-                        <a href="#" class="bg-yellow-300 flex justify-center items-center w-20 sm:w-32 md:w-32 lg:w-52 xl:w-52 h-8 sm:h-12 md:h-14 lg:h-16 xl:h-16"><h1 class="font-bold text-base md:text-xl xl:text-3xl">LOGO</h1></a>
+                        <a href="#" class=" rounded bg-yellow-300 flex justify-center items-center w-20 sm:w-32 md:w-32 lg:w-52 xl:w-52 h-8 sm:h-12 md:h-14 lg:h-16 xl:h-16"><h1 class="font-bold text-base md:text-xl xl:text-3xl">LOGO</h1></a>
                     </div>
             </div>
             <div class="footer-1-right-side flex-1 my-5">

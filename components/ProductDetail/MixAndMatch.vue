@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="grid grid-cols-2 place-content-between gap-4 md:gap-8 lg:gap-8 xl:gap-8">
-                    <div v-for="product in mixAndMaxProducts" :key="'mix-max' + product.imgURL" class="text-center lg:text-left xl:text-left" style="max-height: 294px">
+                    <div v-for="(product, index) in mixAndMaxProducts" :key="'mix-max' + index" class="text-center lg:text-left xl:text-left" style="max-height: 294px">
                         <img class="object-fill w-full m-auto lg:m-0 xl:m-0" style="max-height: 254px" :src="require(`@/assets/imgs/product/${product.imgURL}.jpg`)" alt=""/>
                         <div class="font-bold text-xs sm:text-sm md:text-base xl:text-base">Túi xách quai xanh</div>
                         <div class="font-bold text-xs sm:text-sm md:text-base xl:text-base">499,000<span class="align-top">đ</span></div>

@@ -5,11 +5,11 @@
                 <div class="top-header-left flex-1 hidden lg:block xl:block"></div>
                 <div class="top-header-mid flex justify-start xl:justify-center lg:justify-center flex-1">
                     <!-- hamburger -->
-                    <a href="#" id="hamburger" class="px-3 my-0 mr-1 h-full flex lg:hidden xl:hidden items-center hover:bg-black hover:text-white border-2 border-black content-box rounded"  @click="setIsOpenMobileNav">
+                    <div id="hamburger" class="px-3 my-0 mr-1 h-full flex cursor-pointer lg:hidden xl:hidden items-center hover:bg-black hover:text-white border-2 border-black content-box rounded"  @click="setIsOpenMobileNav">
                         <i class="fas fa-bars" :class="{'fa-times': isOpenMobileNav, 'fa-barsblock': !isOpenMobileNav}"></i>
-                    </a>
+                    </div>
                     <div>
-                        <a href="#" class="flex items-center justify-center h-full no-underline py-1 bg-yellow-300 py-0 w-20 sm:w-32 md:w-32 lg:w-52 xl:w-52">
+                        <a href="#" class="flex rounded items-center justify-center h-full no-underline py-1 bg-yellow-300 py-0 w-20 sm:w-32 md:w-32 lg:w-52 xl:w-52">
                             <!-- <img src="" class="logo"/> -->
                             <h1 class="text-base md:text-xl xl:text-3xl font-bold">LOGO</h1>
                         </a>
@@ -31,7 +31,11 @@
             <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">PRODUCT</a>
             <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">STYLE STORY</a>
             <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2 border-b border-yellow-500">SALE</a>
-            <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2"><span class="flex items-stretch "><i class="fas fa-search self-center pr-2"></i>SEARCH</span></a>
+            <a href="#" class="block text-black-900 text-base font-bold hover:text-yellow-400 px-8 py-2">
+                <span class="flex items-stretch ">
+                    <i class="fas fa-search self-center pr-2"></i>SEARCH
+                </span>
+            </a>
         </nav>
     </div>
 </template>

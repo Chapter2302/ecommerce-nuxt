@@ -1,9 +1,9 @@
 <template>
   <div class="detail-page-container">
     <div class="detail-page-wrapper">
-      <Crumb />
+      <Crumb :content="['home', 'detail']"/>
       <ProductDetail />
-      <BlockContent />
+      <DetailBlock />
       <MixAndMatch />
       <RecommendBlock />
     </div>
@@ -13,7 +13,7 @@
 <script>
 import Crumb from "../../components/Crumb/Crumb.vue"
 import ProductDetail from "../../components/ProductDetail/ProductDetail.vue"
-import BlockContent from "../../components/BlockContent/BlockContent.vue"
+import DetailBlock from "../../components/BlockContent/DetailBlock.vue"
 import MixAndMatch from "../../components/ProductDetail/MixAndMatch.vue"
 import RecommendBlock from "../../components/RecommendBlock/RecommendBlock.vue"
 
@@ -22,8 +22,12 @@ export default {
     Crumb,
     ProductDetail,
     MixAndMatch,
-    BlockContent,
+    DetailBlock,
     RecommendBlock,
+  },
+  data() {
+    return {
+    }
   }
 }
 </script>
