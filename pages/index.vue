@@ -236,6 +236,11 @@ export default {
 @import '@/assets/css/global.scss';
 .style-story-main-image {
   height: 400px;
+
+  @include respond(tablet) { 
+    height: 600px;
+  }
+
   @include respond(desktop) { 
     height: 500px;
   }
