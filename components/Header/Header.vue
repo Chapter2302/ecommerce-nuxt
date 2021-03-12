@@ -1,7 +1,7 @@
 <template>
   <header>
       <HeaderTop/>
-      <HeaderMain/>
+      <HeaderMain v-if="!(this.$route.path == '/')" />
   </header>
 </template>
 

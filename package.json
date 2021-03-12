@@ -10,13 +10,22 @@
   },
   "dependencies": {
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "vue-carousel": "^0.18.0",
+    "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
+    "@nuxtjs/device": "^2.0.1",
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
+    "fibers": "^5.0.0",
+    "node-sass": "^5.0.0",
     "postcss": "^7.0.35",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }

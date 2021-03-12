@@ -1,6 +1,6 @@
 <template>
     <div class="product-detail-container w-full flex justify-center">
-        <div class="product-detail-wrapper w-full py-10 px-8 sm:px-16 md:px-16 lg:px-16 xl:px-16 grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 gap-8" style="max-width: 1280px">
+        <div class="product-detail-wrapper w-full py-10 px-8 sm:px-16 md:px-16 lg:px-16 xl:px-16 grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 gap-8" style="max-width: 1024px">
             <div class="col-span-1 lg:col-span-7 xl:col-span-7 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-4">
                 <div class="col-span-1 grid grid-cols-4 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 justify-items-center place-content-between gap-4 xs:row-start-2 sm:row-start-2">
                     <img 

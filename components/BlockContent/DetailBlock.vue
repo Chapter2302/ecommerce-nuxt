@@ -1,6 +1,6 @@
 <template>
   <div class="bloc-content-container flex justify-center bg-red-100">
-      <div class="block-content-wrapper w-full mx-8 md:px-16 lg:mx-16 xl:mx-16" style="max-width:1280px;">
+      <div class="block-content-wrapper w-full mx-8 md:px-16 lg:mx-16 xl:mx-16" style="max-width:1024px;">
           <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 py-8">
                 <div class="col-span-1 flex flex-wrap content-between">
                     <div class="w-full">

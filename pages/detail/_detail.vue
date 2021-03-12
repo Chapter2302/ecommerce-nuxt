@@ -1,5 +1,6 @@
 <template>
   <div class="detail-page-container">
+    <Header />
     <div class="detail-page-wrapper">
       <Crumb :content="['home', 'detail']"/>
       <ProductDetail />
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import Header from "@/components/Header/Header.vue"
 import Crumb from "../../components/Crumb/Crumb.vue"
 import ProductDetail from "../../components/ProductDetail/ProductDetail.vue"
 import DetailBlock from "../../components/BlockContent/DetailBlock.vue"
@@ -19,6 +21,7 @@ import RecommendBlock from "../../components/RecommendBlock/RecommendBlock.vue"
 
 export default {
   components: { 
+    Header,
     Crumb,
     ProductDetail,
     MixAndMatch,

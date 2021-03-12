@@ -10,20 +10,14 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      //small mobile phone
-      'xs': { 'max': '384px' },
-
-      //large mobile phone
-      'sm': { 'min': '385px', 'max': '640px' },
+      //mobile phone
+      'xs': { 'max': '480px' },
 
       //tablet
-      'md': { 'min': '641px', 'max': '768px' },
-
-      //large table, notebook
-      'lg': { 'min': '769px', 'max': '1024px' },
+      'md': { 'min': '481px', 'max': '1023px' },
 
       //laptop, desktop
-      'xl': { 'min': '1025px' },
+      'xl': { 'min': '1024px' },
     }
   },
   variants: {

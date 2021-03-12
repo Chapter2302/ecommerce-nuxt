@@ -1,6 +1,6 @@
 <template>
   <div class="mix-match-container flex justify-center">
-      <div class="mix-match-wrapper w-full px-8 sm:px-16 md:px-16 lg:px-16 xl:px-16 my-8" style="max-width:1280px">
+      <div class="mix-match-wrapper w-full px-8 sm:px-16 md:px-16 lg:px-16 xl:px-16 my-8" style="max-width:1024px">
           <div class="mb-8">
               <div class="font-bold text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl text-center">MIX &amp; MATCH</div>
               <div class="font-bold text-xs sm:text-base md:text-xl lg:text-xl xl:text-xl text-center">Mặc đẹp hơn khi bạn hoàn thiện outfit này</div>
