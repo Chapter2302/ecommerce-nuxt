@@ -15,9 +15,9 @@
 import Header from "@/components/Header/Header.vue"
 import Crumb from "../../components/Crumb/Crumb.vue"
 import ProductDetail from "../../components/ProductDetail/ProductDetail.vue"
-import DetailBlock from "../../components/BlockContent/DetailBlock.vue"
+import DetailBlock from "../../components/ProductDetail/DetailBlock.vue"
 import MixAndMatch from "../../components/ProductDetail/MixAndMatch.vue"
-import RecommendBlock from "../../components/RecommendBlock/RecommendBlock.vue"
+import RecommendBlock from "../../components/ProductDetail/RecommendBlock.vue"
 
 export default {
   components: { 

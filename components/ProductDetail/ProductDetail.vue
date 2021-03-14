@@ -1,7 +1,7 @@
 <template>
     <div class="product-detail-container w-full flex justify-center">
-        <div class="product-detail-wrapper w-full py-10 px-8 sm:px-16 md:px-16 lg:px-16 xl:px-16 grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 gap-8" style="max-width: 1024px">
-            <div class="col-span-1 lg:col-span-7 xl:col-span-7 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-4">
+        <div class="product-detail-wrapper w-full py-10 px-8 md:px-16 xl:px-20 grid grid-cols-1 xl:grid-cols-12 gap-8" style="max-width: 1536px">
+            <div class="col-span-1 xl:col-span-8 grid grid-cols-1 md:grid-cols-5 xl:grid-cols-5 gap-4">
                 <div class="col-span-1 grid grid-cols-4 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 justify-items-center place-content-between gap-4 xs:row-start-2 sm:row-start-2">
                     <img 
                         v-on:click="selectedImg = index"
@@ -9,14 +9,14 @@
                         v-for="(imgURL, index) in productImgs" 
                         v-bind:index="index" :key="'product' + index" 
                         :src="require(`@/assets/imgs/product/${imgURL}.jpg`)" 
-                        class="object-fill w-full box-content border-4 border-transparent cursor-pointer xs:justify-self-start" style="max-height: 143px" alt="" 
+                        class="item-image w-full box-content border-4 border-transparent cursor-pointer xs:justify-self-start" alt="" 
                     />
                 </div>
                 <div class="col-span-1 md:col-span-4 lg:col-span-4 xl:col-span-4 xs:row-start-1 sm:row-start-1"> 
-                    <img class="object-fill w-full h-full" style="max-height: 620px" :src="require(`@/assets/imgs/product/${productImgs[selectedImg]}.jpg`)" alt=""/>
+                    <img class="large-image w-full" :src="require(`@/assets/imgs/product/${productImgs[selectedImg]}.jpg`)" alt=""/>
                 </div>
             </div>
-            <div class="col-span-1 md:col-span-5 lg:col-span-5 xl:col-span-5">
+            <div class="col-span-1 md:col-span-4 xl:col-span-4">
                 <div class="font-bold text-3xl lg:text-2xl">ĐẦM BODY XẺ LAI</div>
                 <div class="text-gray-400 xs:text-sm">SKU: MACI2012017</div>
 
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-                <div class="w-full sm:w-3/6 lg:w-3/6 xl:w-3/6 cursor-pointer text-center mt-2.5 py-2 bg-yellow-400 font-bold text-white text-base">
+                <div class="w-full md:w-3/6 xl:w-3/6 cursor-pointer text-center mt-2.5 py-2 bg-yellow-400 font-bold text-white text-base">
                     LIÊN HỆ
                 </div>
             </div>
@@ -74,7 +74,7 @@ export default {
     },
     data() {
         return {
-            productImgs: ["photo2", "photo3", "photo2", "photo3"],
+            productImgs: ["photo8", "photo3", "photo9", "photo10"],
             selectedImg: 0,
             productSize: "M",
             productColor: "Xanh",
@@ -99,5 +99,40 @@ input[type='number']::-webkit-outer-spin-button {
 
 .custom-number-input button:focus {
     outline: none !important;
+}
+</style> 
+
+<style lang="scss" scoped>
+@import '@/assets/css/global.scss';
+.large-image {
+    height: 350px;
+
+    @include respond(tablet) {
+        height: 640px;
+    }
+
+    @include respond(desktop) {
+        height: 680px;
+    }
+
+    @include respond(large-desktop) {
+        height: 820px;
+    }
+}
+
+.item-image {
+    height: 80px;
+
+    @include respond(tablet) {
+        height: 140px;
+    }
+
+    @include respond(desktop) {
+        height: 150px;
+    }
+
+    @include respond(large-desktop) {
+        height: 180px;
+    }
 }
 </style>

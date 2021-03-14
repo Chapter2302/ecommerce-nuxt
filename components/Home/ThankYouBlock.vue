@@ -1,6 +1,6 @@
 <template>
   <div class="bloc-content-container flex justify-center bg-red-100">
-      <!-- <div class="block-content-wrapper w-full pr-8 xl:pr-16" style="max-width:1024px;">
+      <!-- <div class="block-content-wrapper w-full pr-8 xl:pr-16" style="max-width:1536px;">
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 py-8">
                 <div class="col-span-1 flex justify-center">
                     <img class="object-scale-down mx-auto" src="@/assets/imgs/product/thanks.png" style="max-width: 250px"/>
@@ -20,8 +20,12 @@
             </div>
       </div> -->
 
-      <div class="block-content-wrapper w-full px-4 xl:pl-0 md:pr-16 xl:pr-16" style="max-width:1024px;">
-          <div class="grid grid-cols-2 gap-10 py-8">
+        <div 
+            class="block-content-wrapper w-full 
+            px-4 xl:pl-0 md:pr-16 xl:pr-24" 
+            style="max-width:1536px;"
+        >
+            <div class="grid grid-cols-2 gap-10 py-8 xl:py-20">
                 <div class="col-span-1 flex justify-center flex-wrap content-center">
                     <img class="object-scale-down h-24 xl:h-auto" src="@/assets/imgs/product/thanks.png" style="max-width: 250px"/>
                 </div>

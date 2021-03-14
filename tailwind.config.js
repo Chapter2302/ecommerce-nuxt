@@ -14,7 +14,7 @@ module.exports = {
       'xs': { 'max': '480px' },
 
       //tablet
-      'md': { 'min': '481px', 'max': '1023px' },
+      'md': { 'min': '480px', 'max': '1023px' },
 
       //laptop, desktop
       'xl': { 'min': '1024px' },

@@ -1,8 +1,8 @@
 <template>
   <footer class="bg-red-100 flex justify-center py-5 mt-8 xl:mt-16 text-center xl:text-left">
-      <div class="mx-16 w-full" style="max-width:1024px">
+      <div class="mx-16 w-full" style="max-width:1536px">
         <div class="footer-1 flex flex-col xl:flex-row">
-            <div class="footer-1-left-side flex-1 my-5">
+            <div class="footer-1-left-side flex-1 my-5 hidden xl:block">
                     <div class="footer-logo w-full flex justify-center xl:justify-start items-center">
                         <!--<img />-->
                         <a href="#" class=" rounded bg-yellow-300 flex justify-center items-center w-20 sm:w-32 md:w-32 xl:w-52 h-8 sm:h-12 md:h-14 xl:h-16"><h1 class="font-bold text-base md:text-xl xl:text-3xl">LOGO</h1></a>
