@@ -5,8 +5,7 @@
             <div 
                 class="grid grid-cols-1 xl:grid-cols-3 gap-8 xl:gap-16 
                 w-full px-8 md:px-16 xl:px-16
-                text-center font-bold"
-                style="max-width: 1536px"
+                text-center font-bold" style="max-width: 1536px"
             >
                 <div class="flex xl:flex-wrap xl:content-between">
                     <div class="xs:flex-1 md:flex-1 pr-2 xl:pr-0">
@@ -58,8 +57,8 @@ export default {
     height: 580px;
   }
 
-  @include respond(large-desktop) { 
-    height: 640px;
+  @include respond(large-desktop) {
+    height: 680px;
   }
 }
 

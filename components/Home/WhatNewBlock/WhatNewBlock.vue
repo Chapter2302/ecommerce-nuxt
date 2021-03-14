@@ -1,6 +1,6 @@
 <template>
     <div class="what-new-container w-full flex justify-center">
-      <div class="what-new-wrapper w-full" style="max-width: 1536px">
+      <div class="what-new-wrapper w-full">
         <div 
           class=
             "pt-20 md:pt-28 xl:pt-8 pb-8 md:pb-16 xl:pb-5
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <WhatNewCarousel />
+        <WhatNewCarousel class="w-full" />
       </div>
     </div>
 </template>
